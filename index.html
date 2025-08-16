@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain Recognition System</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-brain"></i>
+            <span>Pain Recognition</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    
+                    <h1>
+                        <span class="highlight-blue">Advanced</span> Pain Recognition System
+                    </h1>
+                    <p class="hero-subtitle">Using <span class="highlight-green">cutting-edge AI</span> to analyze and understand pain patterns</p>
+                    <div class="hero-description">
+                        <p>Our state-of-the-art system uses deep learning to accurately detect and analyze pain levels from facial expressions, providing instant and reliable results.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#analysis" class="primary-button">
+                            <i class="fas fa-upload"></i>
+                            Start Analysis
+                        </a>
+                        <a href="#about" class="secondary-button">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="hero-image" style="margin-left: 150px;">
+                    <img src="static/images/3337334-removebg-preview.png" alt="Pain Detection Analysis" class="floating">
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="analysis-section">
+            <div class="container">
+                <div class="analysis-box">
+                    <h2>Pain Analysis</h2>
+                    
+                    <!-- Image Upload Section -->
+                    <div class="upload-section">
+                        <h3>Upload Image for Analysis</h3>
+                        <div class="upload-container">
+                            <div class="button-group">
+                                <input type="file" id="imageUpload" accept="image/*" class="file-input">
+                                <label for="imageUpload" class="upload-button">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    Choose Image
+                                </label>
+                                <button id="liveCameraButton" class="upload-button">
+                                    <i class="fas fa-camera"></i>
+                                    Live Camera
+                                </button>
+                            </div>
+                            <div id="preview-container" class="preview-container">
+                                <img id="imagePreview" src="" alt="" style="display: none;">
+                            </div>
+                        </div>
+                        <button id="analyzeImage" class="analyze-button" disabled>Analyze Image</button>
+                    </div>
+
+                    <div class="analysis-results">
+                        <div class="result-card">
+                            <h3>Pain Level</h3>
+                            <div id="pain-level" class="result-value">--</div>
+                        </div>
+                        <div class="result-card">
+                            <h3>Pain Class</h3>
+                            <div id="pain-class" class="result-value">--</div>
+                        </div>
+                        <div class="result-card">
+                            <h3>Confidence</h3>
+                            <div id="confidence" class="result-value">--</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Our Technology</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI-Powered</h3>
+                        <p>Advanced machine learning algorithms for accurate pain detection</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Real-time Analysis</h3>
+                        <p>Instant feedback and continuous monitoring</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Privacy Focused</h3>
+                        <p>Secure and confidential data handling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer a range of services to help you manage and understand pain better.</p>
+                <!-- Add more service details here -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" >
+            
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@painrecognition.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pain Recognition System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html> 
